@@ -26,16 +26,16 @@ void main() {
   }
 
   while (grade < 10) {
-    print('disgraceful');
+    print('not A+');
     grade = grade + 0.1;
   }
 
-  print(fibonnaci(10));
+  print(fibonacci(10));
 }
 
-int fibonnaci(int fibonnaciFucker) {
-  if (fibonnaciFucker == 0 || fibonnaciFucker == 1) {
-    return fibonnaciFucker;
+int fibonacci(int n) {
+  if (n == 0 || n == 1) {
+    return n;
   }
-  return fibonnaci(fibonnaciFucker - 1) + fibonnaci(fibonnaciFucker - 2);
+  return fibonacci(n - 1) + fibonacci(n - 2);
 }

@@ -1,31 +1,29 @@
-//Dart impede de fazer isso
+//Dart prevents you from doing this
 
 // String nome;
 // print(nome)
 
-//por padrao se a variavel não for inicializada ela recebera um valor null
-// e isso pode ocasionar erros, logo o dart nos joga um erro se tivermos
-// a variavel com valor null
+// by default if the variable doesn't receive a value at inicialization, it's value is null
+// and this can cause errors, so dart throws an error
 
 // > Error: Field 'nome' should be initialized because its type 'String' doesn't allow null
 
-//porem em alguns casos é aplicavel uma variavel ser aplicada como iniciada em
-// nulo
-// logo podemos fazer isso -> String? nome;
+//But in some cases we want to have a variable with null value
+// dart allows to do thios -> String? nome;
 
 void main() {
-  String? nome;
-  print(nome == null); // >true
+  String? name;
+  print(name == null); // >true
 
-  //Em contrapartida eu posso afirmar que uma variavel não é nula
-  String? estado;
-  print(estado!);
+  //In contrast we can affirm that a variable is not a null
+  String? state;
+  print(state!);
 
-  // late indica que depois da primeira inicialização da variavel
-  // ele nunca mais podera receber um valor de null
+  // late indicates that after the fist value assigned for that variable
+  // it can never be a null again
 
-  late String sobrenome;
-  sobrenome = 'a';
-  print(sobrenome);
-  // Erro se -> sobrenome = null;
+  late String surname;
+  surname = 'a';
+  print(surname);
+  // error if we do -> sobrenome = null;
 }

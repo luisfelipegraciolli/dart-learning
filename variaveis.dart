@@ -9,8 +9,8 @@ void main() {
   Object name2 = 'pedro';
   print(name2);
 
-  // Listas
-  //List<tipo> nomeDaLista = [tipo elementos];
+  // Lists
+  //List<tyoe> listName = [type elements];
   List<String> listaNomes = [
     'Luis',
     'Rafaela',
@@ -27,7 +27,7 @@ void main() {
     print("");
   }
 
-  //Concatenação
+  //String concatenation
 
   print(
       "${listaNomes[0]} is friends with $listaNomes but is ex with ${listaNomes[2]} and ${listaNomes[1]}");
